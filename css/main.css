@@ -72,6 +72,7 @@ img.texture{
    display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 /*.line{*/
@@ -173,7 +174,11 @@ img.texture{
     justify-content:center;
     align-items: center;
     position: relative;
+    cursor: pointer;
 
+}
+.container .main .buttons .button-right{
+    cursor: pointer;
 }
 .container .main .buttons .button-left:hover{
     background: #FBCE51;
@@ -314,7 +319,7 @@ display: none;
     text-align: left;
     color:#313131;
     padding-top: 150px;
-    padding-left: 50px;
+
 
 
 }
@@ -672,7 +677,7 @@ top:600px;
 
     margin-top: 55px;
     display: grid;
-    grid-template-columns: repeat(2,302px);
+    grid-template-columns: repeat(2,1fr);
 
 
 
@@ -790,8 +795,7 @@ display: grid;
     letter-spacing: 0px;
     text-align: left;
     padding-top: 50px;
-    padding-left: 70px;
-    padding-right: 70px;
+
 
 
 }
@@ -809,6 +813,8 @@ div.block_one{
     grid-row:1;
     position: relative;
     background: #E9DED4;
+
+    padding-bottom: 10px;
 }
 
 
@@ -817,36 +823,48 @@ div.block_one{
     grid-row:1;
     background: #E9DED4;
     position: relative;
+
+    padding-bottom: 10px;
 }
 .block_three{
     grid-column: 3;
     grid-row:1/3;
     background: #E9DED4;
     position: relative;
+
+    padding-bottom: 10px;
 }
 .block_four{
     grid-column: 1;
     grid-row:2;
     background: #E9DED4;
     position: relative;
+
+    padding-bottom: 10px;
 }
 .block_five{
     grid-column: 2;
     grid-row:2;
     background: #E9DED4;
     position: relative;
+
+    padding-bottom: 10px;
 }
 .block_six{
     grid-column: 1;
     grid-row:3;
     background: #E9DED4;
     position: relative;
+
+    padding-bottom: 10px;
 }
 .block_seven{
     grid-column: 2/4;
     grid-row:3;
     background: #E9DED4;
     position: relative;
+
+    padding-bottom: 10px;
 }
 
 .number{
@@ -855,6 +873,7 @@ div.block_one{
     align-items: start;
     padding-top: 10px;
     padding-left: 10px;
+
 
 
 }
@@ -1003,7 +1022,7 @@ div.block_one{
         font-size: 50px;
     }
 }
-@media (max-width: 425px){
+@media (max-width: 570px){
     .information_three .container .arrows{
         display: flex;
         width: 178px;
@@ -1011,7 +1030,6 @@ div.block_one{
         margin: 0 auto;
         align-items: center;
         justify-content: space-between;
-
 
     }
     .number {
@@ -1037,6 +1055,7 @@ div.block_one{
         text-align: left;
         margin-top: 130px;
         position: relative;
+
 
 
 
@@ -1069,7 +1088,7 @@ div.block_one{
 }
 
     .information_three_div_block{
-        grid-template-columns: repeat(5,minmax(385px,1fr));
+        grid-template-columns: repeat(5,minmax(100%,1fr));
         grid-auto-rows: 150px;
         padding: 0;
 
@@ -1155,7 +1174,7 @@ div.block_one{
 
         width: 300px;
         left:0;
-        top:245px;
+        top:188px;
 
     }
 
@@ -1163,6 +1182,7 @@ div.block_one{
         grid-column: 1;
         grid-row:1;
         margin: 0 auto;
+
 
 
     }
@@ -1205,10 +1225,17 @@ div.block_one{
     }
 
 }
-
+@media(max-width: 453px){
+    .information_three_div .img {
+        position: absolute;
+        width: 300px;
+        left: 0;
+        top: 220px;
+    }
+}
 @media (max-width: 375px) {
     .information_three_div_block {
-        grid-template-columns: repeat(5, minmax(335px, 1fr));
+        grid-template-columns: repeat(5, minmax(100%, 1fr));
         grid-auto-rows: 150px;
         padding: 0;
         /*overflow: hidden;*/
@@ -1219,7 +1246,7 @@ div.block_one{
 }
 @media (max-width: 320px) {
     .information_three_div_block {
-        grid-template-columns: repeat(5, minmax(280px, 1fr));
+        grid-template-columns: repeat(5, minmax(100%, 1fr));
         grid-auto-rows: 150px;
         padding: 0;
         /*overflow: hidden;*/
@@ -1481,7 +1508,7 @@ position: relative;
     }
 
 }
-@media (max-width: 800px) and (min-width: 375px) {
+@media (max-width: 800px) and (min-width: 337px) {
 
     .four__arrow{
         position: relative;
@@ -1491,7 +1518,21 @@ position: relative;
     }
 
 }
+@media (max-width: 336px) {
 
+    .four__arrow{
+        position: relative;
+        top:480px;
+
+
+    }
+    .four {
+
+        margin-bottom: 30px;
+
+    }
+
+}
 @media (max-width: 425px) {
     .four__left,.four__right{
         width: 36px;
@@ -1530,6 +1571,7 @@ position: relative;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 

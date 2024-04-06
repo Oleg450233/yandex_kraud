@@ -116,7 +116,11 @@ document.addEventListener('mouseup',scrollStop);
 list.addEventListener('scroll',infiniteScroll);
 
 function test(){
+    if(x===6)
+        x=0
+    x += 1;
     list.scrollLeft+=card;
+    left1.innerText = x;
     console.log('Привет');
 
 }

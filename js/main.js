@@ -149,14 +149,7 @@ arrow1.forEach(item=> {
             numbers[i].style.background = '#D9D9D9';
             i = i + 1;
             numbers[i].style.background = '#313131';
-            // if(i===numbers.length-1){
-            //     right.style.background="#D6D6D6";
-            //     // left.style.background="#313131";
-            // }
-            // if(i===4){
-            //     // right.style.background="#313131";
-            //     right.style.background="#D6D6D6";
-            // }
+
         }
              if(item.id === 'right0' && i===0){
                 // right.style.background="#313131";
