@@ -124,4 +124,4 @@ function test(){
     console.log('Привет');
 
 }
-setInterval(test,2000);
+setInterval(test,4000);
